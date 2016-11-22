@@ -6,7 +6,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
 
-@RepositoryRestResource(collectionResourceRel = "user", path = "user")
+@RepositoryRestResource
 public interface UserRepository extends MongoRepository<User, String> {
 
     List<User> findByLastName(@Param("lastName") String lastName);
