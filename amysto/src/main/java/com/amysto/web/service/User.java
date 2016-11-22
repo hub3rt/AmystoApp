@@ -5,25 +5,25 @@ import org.springframework.data.annotation.Id;
 public class User {
 	
 	@Id private String id;
-	private String firstname;
-	private String lastname;
+	private String firstName;
+	private String lastName;
 	
 	public String getFirstname() {
-		return firstname;
+		return firstName;
 	}
 	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+		this.firstName = firstname;
 	}
 	public String getLastname() {
-		return lastname;
+		return lastName;
 	}
 	public void setLastname(String lastname) {
-		this.lastname = lastname;
+		this.lastName = lastname;
 	}
 	
 	@Override
 	public String toString() {
-		return "User [firstname=" + firstname + ", lastname=" + lastname + "]";
+		return "User [firstname=" + firstName + ", lastname=" + firstName + "]";
 	}
 	
 	
