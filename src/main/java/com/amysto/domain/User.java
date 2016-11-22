@@ -1,4 +1,4 @@
-package com.amysto.web.service;
+package com.amysto.domain;
 
 import org.springframework.data.annotation.Id;
 
