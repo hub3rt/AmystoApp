@@ -26,4 +26,8 @@ public class MenuController {
     public String contact() {
     	return "contact";
     }
+    @RequestMapping("/help")
+    public String help() {
+    	return "help";
+    }
 }

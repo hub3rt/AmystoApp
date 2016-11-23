@@ -2,7 +2,6 @@ $( document ).ready(function() {
 
   $('#icon-menu').click(function() {
     var state = $('.menu').data('state');
-    console.log(state);
     if(state === 'close'){
       $('.menu').animate({     
         left: "0px"    
