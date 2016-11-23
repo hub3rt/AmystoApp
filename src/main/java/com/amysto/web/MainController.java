@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/main")
+@RequestMapping("/")
 public class MainController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String index() {
-        return "main";
+        return "index";
     }
 }
