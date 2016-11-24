@@ -2,10 +2,6 @@ spring:
     data:
         rest:
             basePath: /api
-    mvc:
-        view:
-            prefix: /webapp/
-            suffix: .html
 
 server:
     port: 9000
