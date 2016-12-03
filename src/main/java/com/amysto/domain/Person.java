@@ -1,8 +1,10 @@
 package com.amysto.domain;
 
+import java.util.Date;
+
 import org.springframework.data.annotation.Id;
 
-public class User {
+public class Person {
 
     @Id
     private String id;
@@ -26,12 +28,8 @@ public class User {
         this.lastName = lastName;
     }
 
-    @Override
-    public java.lang.String toString() {
-        return "User{" +
-                "id='" + id + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
-    }
+	public String getId() {
+		return id;
+	}
+    
 }
