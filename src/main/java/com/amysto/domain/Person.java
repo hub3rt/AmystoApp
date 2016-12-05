@@ -1,13 +1,14 @@
 package com.amysto.domain;
 
-import java.util.Date;
+import javax.annotation.Generated;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.annotation.Id;
 
 public class Person {
 
-    @Id
-    private String id;
+	@Id
+    private int id;
 
     private String firstName;
     private String lastName;
@@ -27,9 +28,15 @@ public class Person {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+    
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
     
 }

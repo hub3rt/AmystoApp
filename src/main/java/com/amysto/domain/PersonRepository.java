@@ -10,5 +10,6 @@ import java.util.List;
 public interface PersonRepository extends MongoRepository<Person, String> {
 
     List<Person> findByLastName(@Param("lastName") String lastName);
-
+    List<Person> findByFirstName(@Param("firstName") String firstName);
+    List<Person> findById(@Param("id") int id);
 }
